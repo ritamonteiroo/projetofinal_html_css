@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portifólio</title>
+    <!-- chama o arquivo CSS-->
+    <!-- rel serve para dizer que está sendo relacionando de um arquivo a ser utilizado ao atual-->
+    <link rel="stylesheet" href="style.css">
+    <!--chamar o ícone da barra do navegador-->
+    <!-- rel serve para dizer que está sendo relacionando de um arquivo a ser utilizado ao atual-->
+    <!-- shortcut icon, passando um ícone-->
+    <link rel="shortcut icon" href="./img/ms-icon-150x150.png">
+    <!--inserir tag para ícones de uma lib externa no HTML-->
+    <!--cria um espaço para que um código de programação javascript seja incorporado 
+        dentro do próprio documento HTML, ou carrega um código javascript externamente-->
+    <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" data-auto-replace-svg="nest"></script>
+</head>
+<!-- Corpo do projeto-->
+<body>
+    <!--criar o cabeçalho-->
+    <header class="header-menu">
+        <!--nav é uma barra de navegação-->
+        <nav>
+            <ul class="lista-menu">
+                <!--conectar os link as seções-->
+                <li><a href="#formacao"> Formação</a></li>
+                <li><a href="#portifolio">Portifólio</a></li>
+                <li><a href="#portifolio">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--corpo da página, visível ao usuário-->
+    <main>
+        <section class="principal">
+            <!--article significa que a sessão é independente-->
+            <article class="subcontainer-principal container">
+                 <div>
+                    <img src="./img/1564672525597.jpg" alt="Minha imagem de perfil" class="imagemperfil">
+                </div>
+
+                <div>
+                    <h1 class="nome-completo"> Rita de Cassia Mota Monteiro</h1>
+                    <h2 class="profissao"> Engenheira Agrícola e Mestra em Ciência e Tecnologia de Sementes</h2>
+                </div>
+
+                <div class="texto-sobre" >
+                     <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a nibh in sem tempor lacinia. 
+                        Integer magna ante, vulputate sit amet sodales sed, pharetra ac velit. In hac habitasse platea dictumst. 
+                        Nulla facilisi. Nulla id luctus tortor, id hendrerit
+                        metus. Donec vulputate tellus sed sollicitudin porta. Aliquam turpis leo, pellentesque et velit a, 
+                        sagittis scelerisque quam. Suspendisse imperdiet molestie leo. Proin sed imperdiet erat, ut
+                     </p>
+                </div>
+            </article>
+           
+        </section>
+
+        <section id="formacao">
+            <article class="container article-lista">
+                <div>
+                    <h3 class="topico-principal">Formação</h3>
+                 </div>
+
+                 <div class="lista-item">
+                    <ul>
+                         <li>
+                             <p class="lista-titulo">Ciclo formativo PretaLab </p>
+                                <!--O atributo <a target> especifica onde abrir o documento vinculado por uma tag a (elemento de âncora).
+                                Um atributo target com o valor de _blank abre o documento vinculado em uma nova janela ou aba.-->
+                             <a href="https://www.pretalab.com/formacao" target="_blank" class="lista-local"> Pretalab Olabi</a>
+                             <p class="lista-descrição">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a nibh in sem tempor lacinia. 
+                                Integer magna ante, vulputate sit amet sodales sed, pharetra ac velit. In hac habitasse platea dictumst. 
+                                Nulla facilisi. Nulla id luctus tortor, id hendreritmetus. Donec vulputate tellus sed sollicitudin porta. Aliquam turpis leo, pellentesque et velit a, 
+                                sagittis scelerisque quam. Suspendisse imperdiet molestie leo. Proin sed imperdiet erat, ut </p>
+                         </li>
+                    </ul>
+                 </div>
+            </article>
+        </section>
+
+         <section id="portifolio" class="principal" >
+            <article class="container article-lista" >
+                <div>
+                     <h3 class="topico-principal">Portifólio</h3>
+                </div>
+
+                 <div class="lista-item">
+                    <ul >
+                        <li>
+                        <p class="lista-titulo">Projeto Calculadora </p>
+                            <!--O atributo <a target> especifica onde abrir o documento vinculado por uma tag a (elemento de âncora).
+                                Um atributo target com o valor de _blank abre o documento vinculado em uma nova janela ou aba.-->
+                            <a href="https://github.com/ritamonteiroo/ProjetoFinal_PretaLab-Disney-LP" target="_blank" class="lista-local"> Minha Calculadora</a>
+                            <p class="lista-descrição">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a nibh in sem tempor lacinia. 
+                            Integer magna ante, vulputate sit amet sodales sed, pharetra ac velit. In hac habitasse platea dictumst. 
+                            Nulla facilisi. Nulla id luctus tortor, id hendreritmetus. Donec vulputate tellus sed sollicitudin porta. Aliquam turpis leo, pellentesque et velit a, 
+                            sagittis scelerisque quam. Suspendisse imperdiet molestie leo. Proin sed imperdiet erat, ut </p>
+                        </li>
+                    </ul>
+                 </div>
+
+            </article>
+            
+        </section>
+
+    </main>
+
+    <!-- criando o rodapé-->
+    <footer class="rodape" id="contato">
+        <div class="container">
+            <ul class="lista-rodape">
+                <li><i class="fas fa-envelope square estilo-icone"></i>
+                        <!-- mailto é utilizado no HTML junto da propriedade href da tag <a>, para definir um link de e-mail.-->
+                        <a href="mailto: ritamonteiroo@gmail.com" target="_blank"> ritamonteiroo@gmail.com</a>
+                </li>
+                <li><i class="fab fa-linkedin"></i>
+                    <a href="https://www.linkedin.com/in/rita-monteiro-25232057/" target="_blank"> Rita Monteiro</a>
+                </li>
+                <li><i class="fab fa-github-square"></i>
+                    <a href="https://github.com/ritamonteiroo" target="_blank">ritamonteiroo</a>
+                </li>
+                <li><i class="fab fa-instagram"></i>
+                    <a href="https://instagram.com/rimageens?igshid=MTIzZWQxMDU=" target="_blank">rimageens</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    
+</body>
+</html>

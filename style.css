@@ -1,0 +1,176 @@
+/* primeiras propriedades: Lembrando que o asterisco pega o site todo*/
+* {
+    /* define a área de margem nos quatro lados do elemento */
+    margin: 0;
+    /* distância entre o conteúdo de um elemento e suas bordas */
+    padding: 0;
+    /* para configurar uma ou mais das propriedades de contorno */
+    outline: 0;
+  }
+
+.body{
+    /* Definindo a fonte de todo nosso body */
+    font-family: 'Roboto', sans-serif;
+
+}
+
+/*sumir as bolinhas das listas */
+li{
+    list-style: none;
+}
+
+.header-menu{
+    /*display flex é utilizado para organizar os elementos HTML de forma responsiva. Na prática, ao definirmos um elemento com esse valor, 
+    ele funciona como um container para agrupar os elementos filhos, 
+    que são considerados flex-itens e são organizados nos sentidos 
+    horizontal ou vertical.*/
+    /* // Torna o elemento um flex container automaticamente transformando todos os seus filhos diretos em flex itens. */
+    display:flex; 
+    /*é posicionado em relação à viewport, o que significa que ele sempre permanece no mesmo lugar, mesmo que a página seja rolada*/
+    position:fixed; /*Deixa o nosso header fixo*/
+    width: 100%; /* largura*/
+    height: 60px; /*altura*/
+    /* padding: define a distância entre o conteúdo de um elemento e suas bordas*/
+    padding: 8px; /* define espaçamento nos 4 lados */
+    padding-bottom: 32px; /*Espaçamento inferior*/
+    padding-top: 32px; /*Espaçamento superiorr*/
+    background-color:#724796; /*cor de fundo da nossa barra de navegação*/
+}
+
+/*chamar através da classe chamar a tag que tem dentro da tag */
+.header-menu nav{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.lista-menu{
+    display: flex;
+    justify-content: space-evenly;/*Espaçamento entre eles seja igual*/
+    width:50%;/* largura*/
+    align-items:center; /*Posicionando no centro*/
+}
+
+/*Pegando os itens com tag a de dentro da nossa lista*/
+.lista-menu li>a{ /*fechou a li e chamou tudo que tem dentro do a*/
+    color:#fff; /*Cor do texto*/
+    font-size: 18px; /*Tamanho da fonte*/
+    text-decoration: inherit; /*tinha o sublinhado */
+}
+
+
+.principal{
+    height: 100vh;
+    display: flex;
+    background-color: #EAEAEA;
+}
+
+/* O container é um componente do Bootstrap que garante que o seu layout vai ficar alinhado corretamente na página.
+Ele pode definir as margens laterais da página, ou deixar sem margens e, também, posiciona o conteúdo no
+centro do browser. O container é invisível. */
+
+/*A classe container armazena o atributo do grid que é utilizada em todas section, então eu repito 
+container em todas elas ao invés de criar uma nova classe e repetir o mesmo 
+estilo*/
+
+.container{
+    margin-right: auto; /*uma margem automática para todos os lados */
+    margin-left: auto;
+    margin-top: 75px; /*margem para cima */
+    max-width: 960px; /*largura maxima */
+    padding-right: 10px; /*espaçamento direito */
+    padding-left: 10px; /*espaçamento esquerdo */
+    width: 100% /*largura*/
+}
+
+.subcontainer-principal{
+      /*display, flex-direction e justify content são elementos do flexbox que em conjunto, alinham nossos itens*/
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.imagemperfil{
+    width: 200px;
+    height: 200px;
+}
+
+.nome-completo{
+    font-size: 36px;
+    color:#ff4dbc;
+    font-weight: 700; /*espessura */
+    height: 45px;
+}
+
+.profissao{
+    color: #C6B5D5;
+    height: 60px;
+}
+
+.texto-sobre{
+    font-size: 20px;
+    line-height: 32px; /*espaçamento entre as linhas*/
+}
+
+.article-lista{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.topico-principal{
+    font-size: 36px;
+    color: #ff4dbc;
+}
+
+.lista-item{
+    padding: 32px; /*espaçamento*/
+}
+
+.lista-titulo{
+    margin-bottom: 5px;
+    font-size: 22px;
+    color: #661e4b;
+    font-weight: 700;
+}
+
+.lista-local{
+    font-size: 18px;
+    color: #2f80ed;
+}
+
+.lista-descrição{
+    font-size: 18px;
+    margin-top: 5px;
+    line-height: 20px; /*espaçamento entre as linhas*/
+    color: #828282;
+    font-weight: 300;
+}
+
+.rodape{
+    background-color: #724796;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    
+}
+
+.lista-rodape li {
+    color: #fff;
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.estilo-icone i{
+    font-size: 32px;
+    margin-right: 10px;
+}
+
