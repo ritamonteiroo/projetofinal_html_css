@@ -8,6 +8,10 @@
     outline: 0;
   }
 
+.html {
+     scroll-behavior: smooth;
+}   
+
 .body{
     /* Definindo a fonte de todo nosso body */
     font-family: 'Roboto', sans-serif;
@@ -29,12 +33,12 @@ li{
     /*é posicionado em relação à viewport, o que significa que ele sempre permanece no mesmo lugar, mesmo que a página seja rolada*/
     position:fixed; /*Deixa o nosso header fixo*/
     width: 100%; /* largura*/
-    height: 60px; /*altura*/
+    height: 35px; /*altura*/
     /* padding: define a distância entre o conteúdo de um elemento e suas bordas*/
     padding: 8px; /* define espaçamento nos 4 lados */
     padding-bottom: 32px; /*Espaçamento inferior*/
     padding-top: 32px; /*Espaçamento superiorr*/
-    background-color:#724796; /*cor de fundo da nossa barra de navegação*/
+    background-color:#7e521c; /*cor de fundo da nossa barra de navegação*/
 }
 
 /*chamar através da classe chamar a tag que tem dentro da tag */
@@ -53,7 +57,7 @@ li{
 
 /*Pegando os itens com tag a de dentro da nossa lista*/
 .lista-menu li>a{ /*fechou a li e chamou tudo que tem dentro do a*/
-    color:#fff; /*Cor do texto*/
+    color:#eeb81d; /*Cor do texto*/
     font-size: 18px; /*Tamanho da fonte*/
     text-decoration: inherit; /*tinha o sublinhado */
 }
@@ -62,7 +66,7 @@ li{
 .principal{
     height: 100vh;
     display: flex;
-    background-color: #EAEAEA;
+    background-color: #fbffdb;
 }
 
 /* O container é um componente do Bootstrap que garante que o seu layout vai ficar alinhado corretamente na página.
@@ -99,19 +103,20 @@ estilo*/
 
 .nome-completo{
     font-size: 36px;
-    color:#ff4dbc;
+    color:#eeb81d;
     font-weight: 700; /*espessura */
     height: 45px;
 }
 
 .profissao{
-    color: #C6B5D5;
+    color: #7e521c;
     height: 60px;
 }
 
 .texto-sobre{
     font-size: 20px;
     line-height: 32px; /*espaçamento entre as linhas*/
+    color: #424242;
 }
 
 .article-lista{
@@ -123,7 +128,7 @@ estilo*/
 
 .topico-principal{
     font-size: 36px;
-    color: #ff4dbc;
+    color: #eeb81d;
 }
 
 .lista-item{
@@ -133,7 +138,7 @@ estilo*/
 .lista-titulo{
     margin-bottom: 5px;
     font-size: 22px;
-    color: #661e4b;
+    color: #9c6625;
     font-weight: 700;
 }
 
@@ -146,12 +151,12 @@ estilo*/
     font-size: 18px;
     margin-top: 5px;
     line-height: 20px; /*espaçamento entre as linhas*/
-    color: #828282;
+    color: #424242;
     font-weight: 300;
 }
 
 .rodape{
-    background-color: #724796;
+    background-color: #7e521c;
     height: 30vh;
     display: flex;
     align-items: center;
@@ -166,11 +171,32 @@ estilo*/
     display: flex;
     align-items: center;
     justify-content: center;
+    
 
 }
 
-.estilo-icone i{
-    font-size: 32px;
+.estilo-icone {
+    font-size: 25px;
     margin-right: 10px;
+    color: #eeb81d;
+   
 }
 
+.link-icone{
+    color: #eeb81d;
+    text-decoration: inherit;
+}
+
+.botao{
+    font-size: 16px;
+    font-weight: 700;
+    display: flex;
+    flex-direction: row-reverse;
+    color: #eeb81d;
+}
+
+.meio {
+    height: 100vh;
+    display: flex;
+    background-color: #e8e8c9;
+}
