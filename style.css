@@ -41,12 +41,18 @@ li{
     background-color:#7e521c; /*cor de fundo da nossa barra de navegação*/
 }
 
-@media (max-width: 600px)
-{
-  .body
-   {
-    display: none;
-   }
+@media screen and (max-width:768px) {
+    .body, .header-menu{
+       width:  100%;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .lista-menu li>a {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
 }
 
 /*chamar através da classe chamar a tag que tem dentro da tag */
