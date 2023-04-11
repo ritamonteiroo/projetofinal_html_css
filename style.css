@@ -39,7 +39,6 @@ li{
     padding-bottom: 32px; /*Espaçamento inferior*/
     padding-top: 32px; /*Espaçamento superiorr*/
     background-color:#7e521c; /*cor de fundo da nossa barra de navegação*/
-    max-width: 2000px;
 }
 
 /*chamar através da classe chamar a tag que tem dentro da tag */
@@ -47,7 +46,6 @@ li{
     display: flex;
     justify-content: flex-end;
     width: 100%;
-    max-width: 2000px;
 
 }
 
@@ -56,7 +54,6 @@ li{
     display: flex;
     justify-content: space-evenly;/*Espaçamento entre eles seja igual*/
     width:50%;/* largura*/
-    max-width: 1000px;
     align-items:center; /*Posicionando no centro*/
 }
 
@@ -71,7 +68,7 @@ li{
 
 
 .principal{
-    height: 155vh;
+    height: 105vh;
     display: flex;
     background-color: #fbffdb;
     text-align: center;
@@ -89,7 +86,7 @@ estilo*/
     margin-right: auto; /*uma margem automática para todos os lados */
     margin-left: auto;
     margin-top: 75px; /*margem para cima */
-    max-width: 2000px; /*largura maxima */
+    max-width: 960px; /*largura maxima */
     padding-right: 10px; /*espaçamento direito */
     padding-left: 10px; /*espaçamento esquerdo */
     width: 100% /*largura*/
@@ -113,13 +110,12 @@ estilo*/
     font-size: 36px;
     color:#eeb81d;
     font-weight: 700; /*espessura */
-    height: auto;
+    height: 45px;
 }
 
 .profissao{
     color: #7e521c;
-    height: auto;
-    font-size: 22px;
+    height: 60px;
 }
 
 .texto-sobre{
@@ -166,7 +162,7 @@ estilo*/
 
 .rodape{
     background-color: #7e521c;
-    height: 38vh;
+    height: 250px;
     display: flex;
     align-items: center;
     
@@ -211,25 +207,91 @@ estilo*/
 }
 
 .principal1{
-    height: 100vh;
+    height: 70vh;
     display: flex;
     background-color: #fbffdb;
 }
 
-@media (max-width:768px){
-    html{
-        font-size: 50%;}
-    
-    body{
-            font-size: 50%;}
+@media screen and (max-width:600px) {
+    .header-menu{
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+    .lista-menu{
+        margin-top: 16px;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .lista-menu li{
+        margin: 0 8px;
+    }
     
 }
 
-@media (max-width:630px){
-    html{
-        font-size: 50%;}
+@media screen and (max-width:600px) {
+    .lista-menu{
+        width: 80%;
+    }
 }
 
-@media (max-width:540px){
-    
+@media screen and (max-width:600px) {
+    .imagemperfil{
+        width: 125px;
+        height: 125px;
+    }
+
+    .nome-completo{
+        font-size: 22px;
+    }
+    .profissao{
+        font-size: 20px;
+    }
+    .texto-sobre{
+        font-size: 18px;
+        line-height: 24px;
+        color: #424242;
+    }
+    .container{
+        padding: 0;
+        max-width: none;
+        width: 100%;
+    }
+    .article-lista{
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .topico-principal{
+        font-size: 22px;
+    }
+    .lista-titulo{
+        font-size: 20px;
+    }
+    .lista-local{
+        font-size: 18px;
+    }
+    .lista-descrição{
+        font-size: 16px;
+        line-height: 16px;
+    }
+    .lista-rodape li {
+        font-size: 16px;
+        margin: 0 8px;
+    }
+
+    .principal{
+        height: 100vh;
+        display: flex;
+        background-color: #fbffdb;
+        text-align: center;
+    }
+
+    .principal1{
+        height: 70vh;
+        display: flex;
+        background-color: #fbffdb;
+    }
+
+
 }
