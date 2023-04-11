@@ -281,14 +281,14 @@ estilo*/
     }
 
     .principal{
-        height: 100vh;
+        height: 110vh;
         display: flex;
         background-color: #fbffdb;
         text-align: center;
     }
 
     .principal1{
-        height: 70vh;
+        height: 80vh;
         display: flex;
         background-color: #fbffdb;
     }
