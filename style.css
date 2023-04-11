@@ -39,20 +39,7 @@ li{
     padding-bottom: 32px; /*Espaçamento inferior*/
     padding-top: 32px; /*Espaçamento superiorr*/
     background-color:#7e521c; /*cor de fundo da nossa barra de navegação*/
-}
-
-@media screen and (max-width:768px) {
-    .body, .header-menu{
-       width:  100%;
-    }
-}
-
-@media screen and (max-width:600px) {
-    .lista-menu li>a {
-        float: none;
-        text-align: center;
-        width: 100%;
-    }
+    max-width: 2000px;
 }
 
 /*chamar através da classe chamar a tag que tem dentro da tag */
@@ -60,6 +47,8 @@ li{
     display: flex;
     justify-content: flex-end;
     width: 100%;
+    max-width: 2000px;
+
 }
 
 
@@ -67,8 +56,10 @@ li{
     display: flex;
     justify-content: space-evenly;/*Espaçamento entre eles seja igual*/
     width:50%;/* largura*/
+    max-width: 1000px;
     align-items:center; /*Posicionando no centro*/
 }
+
 
 /*Pegando os itens com tag a de dentro da nossa lista*/
 .lista-menu li>a{ /*fechou a li e chamou tudo que tem dentro do a*/
@@ -78,10 +69,12 @@ li{
 }
 
 
+
 .principal{
-    height: 100vh;
+    height: 155vh;
     display: flex;
     background-color: #fbffdb;
+    text-align: center;
 }
 
 /* O container é um componente do Bootstrap que garante que o seu layout vai ficar alinhado corretamente na página.
@@ -96,7 +89,7 @@ estilo*/
     margin-right: auto; /*uma margem automática para todos os lados */
     margin-left: auto;
     margin-top: 75px; /*margem para cima */
-    max-width: 960px; /*largura maxima */
+    max-width: 2000px; /*largura maxima */
     padding-right: 10px; /*espaçamento direito */
     padding-left: 10px; /*espaçamento esquerdo */
     width: 100% /*largura*/
@@ -120,12 +113,13 @@ estilo*/
     font-size: 36px;
     color:#eeb81d;
     font-weight: 700; /*espessura */
-    height: 45px;
+    height: auto;
 }
 
 .profissao{
     color: #7e521c;
-    height: 60px;
+    height: auto;
+    font-size: 22px;
 }
 
 .texto-sobre{
@@ -172,7 +166,7 @@ estilo*/
 
 .rodape{
     background-color: #7e521c;
-    height: 30vh;
+    height: 38vh;
     display: flex;
     align-items: center;
     
@@ -191,7 +185,7 @@ estilo*/
 }
 
 .estilo-icone {
-    font-size: 25px;
+    font-size: 20px;
     margin-right: 10px;
     color: #eeb81d;
    
@@ -211,7 +205,99 @@ estilo*/
 }
 
 .meio {
-    height: 100vh;
+    height: auto;
     display: flex;
     background-color: #e8e8c9;
+}
+
+.principal1{
+    height: 100vh;
+    display: flex;
+    background-color: #fbffdb;
+}
+
+@media (max-width:768px){
+    html{
+        font-size: 50%;}
+    
+    body{
+            font-size: 50%;}
+    
+}
+
+@media (max-width:630px){
+    html{
+        font-size: 50%;}
+}
+
+@media (max-width:540px){
+    .lista-menu{
+        display: none;
+    }
+    .one,
+    .two,
+    .three{
+        background-color:#eeb81d ;
+        height: 5px;
+        width: 100%;
+        margin: 6px auto;
+    }
+    .menu-toggle{
+        width: 40px;
+        height: 30px;
+        margin-right: 20px;
+    }
+
+    /* fullscreen */
+    .menu-section.on {
+        position: absolute;
+        top:0;
+        left:0;
+        
+        width: 100vw;
+        height: 100vh;
+
+        background-color: #eeb81d ;
+        
+        z-index: 10;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu-section.on nav {
+        display: block;
+    }
+
+    .menu-section.on .menu-toggle {
+        position: absolute;
+        right: 25px;
+        top: 15px;
+    }
+
+    .menu-section.on .menu-toggle .one {
+        transform: rotate(45deg) translate(7px, 7px);
+    }
+
+    .menu-section.on .menu-toggle .two {
+        opacity: 0;
+    }
+
+    .menu-section.on .menu-toggle .three {
+        transform: rotate(-45deg) translate(8px, -9px);
+    }
+
+    .menu-section.on nav ul {
+        text-align: center;
+        display: block;
+    }
+
+    .menu-section.on nav ul a{
+        transition-duration: 0.5s;
+        font-size: 3rem;
+        line-height: 4rem;
+        display: block;
+        
+    }
 }
