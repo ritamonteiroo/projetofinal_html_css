@@ -68,7 +68,7 @@ li{
 
 
 .principal{
-    height: 105vh;
+    height: 115vh;
     display: flex;
     background-color: #fbffdb;
     text-align: center;
@@ -207,7 +207,7 @@ estilo*/
 }
 
 .principal1{
-    height: 70vh;
+    height: 85vh;
     display: flex;
     background-color: #fbffdb;
 }
@@ -281,7 +281,7 @@ estilo*/
     }
 
     .principal{
-        height: 110vh;
+        height: 120vh;
         display: flex;
         background-color: #fbffdb;
         text-align: center;
